@@ -1,0 +1,55 @@
+<html lang="en-US"> <body>
+<p> 숙제: 04 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 9.5
+&nbsp; (Ans: (a) R<sub>D</sub> = 10[KΩ])
+<br>(b) C<sub>s</sub> = 3.536[uF]
+<br>(c) ω<sub>z</sub> = 10[Hz]
+<br>(d) f<sub>L</sub> = 100[Hz]
+<br>(e)A<sub>v(DC)</sub> = -2[V/V]) </p>
+<center>
+공통소스 증폭기에서 mid-band 의 A<sub>M</sub> = -g<sub>m</sub>R<sub>D</sub> 이며, A<sub>M</sub> = -20[V/V], <br> 
+g<sub>m</sub>=2[mA/V] 이므로 R<sub>D</sub> = 10[KΩ] 이다.<br>
+ω<sub>L</sub> = 1/RC 이므로 f<sub>L</sub> = 1/(2πRC) 이다. 이때 R은 1/g<sub>m</sub> // R<sub>S</sub> 이며 100[Hz] 가 나오려면<br>
+C<sub>s</sub> = 3.536[uF] 이다.<br>
+ω<sub>z</sub> = 1/C<sub>s</sub>R<sub>s</sub> = 10[Hz] 이다.<br>
+f<sub>L</sub> 은 ω<sub>P2</sub> / 2π 와 거의 같으므로 100[Hz] 에 가깝다.<br>
+직류이득을 구하기 위해 커패시턴스를 개방시키면 1/g<sub>m</sub> 과 R<sub>S</sub> 가 직렬이 되고, 전압이득은 -g<sub>m</sub>(1/g<sub>m</sub>+R<sub>S</sub>) 이다.<br>
+따라서 대입시 -2[V/V] 의 전압이득을 가지게 된다. 기존 전압이득 -20 의 magnitude 를 20logA<sub>M</sub> 에 대입시 26[dB] 이 나오며<br>
+직류 전압이득을 대입시 6[dB] 이 나오게 된다. 
+</center>
+<br>
+<p> &clubs; Problem 9.10
+&nbsp; (Ans: (a)A<sub>M</sub> = -R<sub>C</sub>/r<sub>e</sub>+R<sub>e</sub>, f<sub>L</sub>=1/2π(r<sub>e</sub>+R<sub>e</sub>)C<sub>E</sub>)
+<br>(b)A<sub>M</sub> = (-R<sub>C</sub> / r<sub>e</sub>)(1/(1+R<sub>e</sub>/r<sub>e</sub>))
+<br>(c)f<sub>L</sub> = (1/2π(r<sub>e</sub>+R<sub>e</sub>)C<sub>E</sub>)*(1/(1+R<sub>e</sub>/r<sub>e</sub>))
+<br>(d)R<sub>e</sub> = 900[Ω] , A<sub>M</sub> = 10[V/V])</p>
+<center>
+A<sub>M</sub> = -R<sub>C</sub>/r<sub>e</sub>+R<sub>e</sub> 이며 f<sub>L</sub>=1/2π(r<sub>e</sub>+R<sub>e</sub>)C<sub>E</sub> 이다.<br>
+R<sub>e</sub> 의 영향을 보기위해 특정 factor 를 만들면, (-R<sub>C</sub> / r<sub>e</sub>)(1/(1+R<sub>e</sub>/r<sub>e</sub>)) 로 묶어낼 수 있다.<br>
+f<sub>L</sub> 도 마찬가지로 (1/2π(r<sub>e</sub>+R<sub>e</sub>)C<sub>E</sub>)*(1/(1+R<sub>e</sub>/r<sub>e</sub>)) 이다.<br>
+factor 가 (1/(1+R<sub>e</sub>/r<sub>e</sub>)) 임을 알았고, 1/10 배의 factor 을 구하면 R<sub>e</sub> = 900[Ω] 이다.<br>
+또한, A<sub>M</sub> = 10[V/V] 가 된다.
+</center>
+<br>
+<p> &clubs; Problem 9.15
+&nbsp; </p>
+<center>
+f<sub>T</sub> = g<sub>m</sub> / 2π(C<sub>gs</sub> + C<sub>gd</sub>) 에서 C<sub>gs</sub> >> C<sub>gd</sub> 이므로<br>
+f<sub>T</sub> = g<sub>m</sub> / 2π(C<sub>gs</sub>) 이며, g<sub>m</sub> = kn'(W/L)V<sub>OV</sub> 에 V<sub>OV</sub> = sqrt(2I/kn'(W/L) 대입시<br>
+f<sub>T</sub> = sqrt(2Ikn'(W/L) / 2π(C<sub>gs</sub>) 이 된다. C<sub>gs</sub> = (2/3)(WLC<sub>ox</sub>) 과 kn' = u<sub>n</sub>C<sub>ox</sub> 대입시<br>
+f<sub>T</sub> = 1.5/πL sqrt(u<sub>n</sub> / C<sub>ox</sub>WL)<br>
+</center>
+<br>
+<p> &clubs; Problem 9.19
+&nbsp; (Ans: f<sub>T</sub> = 5.06[GHz])</p>
+<center>
+g<sub>m</sub> = 40[mA/V], r<sub>π</sub> = 2.5[KΩ], r<sub>o</sub> = 50[KΩ] 임을 25[mV], 주어진 I<sub>C</sub> 로 구하고, <br>
+C<sub>de</sub> = τ<sub>F</sub>g<sub>m</sub> = 1.2[pF] 이며 C<sub>je</sub> = 2C<sub>je0</sub> = 40[fF] 이다<br>
+따라서 C<sub>π</sub> = C<sub>je</sub> + C<sub>de</sub> = 1.24[pF] 이 되며, <br>
+C<sub>μ</sub> = C<sub>μ0</sub> / (1+V<sub>CB</sub>/V<sub>0c</sub>)<sup>m</sup> 대입시 15.667[fF] 이다.<br>
+따라서 f<sub>T</sub> = g<sub>m</sub> / 2π(C<sub>π</sub> + C<sub>μ</sub>) 대입시 5.06[GHz] 이다.
+</center>
+
+</body> </html>

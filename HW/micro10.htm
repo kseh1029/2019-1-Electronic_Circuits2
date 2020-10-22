@@ -1,0 +1,77 @@
+<html lang="en-US"> <body>
+<p> 숙제: 10 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 10.2
+&nbsp;</p>
+(a)<br>
+입력저항이 무한대이므로 V<sub>o</sub> 는 R<sub>1</sub> 와 R<sub>2</sub> 의 전압분배를 이용한다.<br>
+<b>&there4;&beta; = R<sub>1</sub> / (R<sub>1</sub> + R<sub>2</sub>)</b><br>
+(b)<br>
+(1)<br>
+A = 1000V/V<br>
+A<sub>f</sub> = A / (1 + A&beta;) = 1000 / (1 + 1000&beta;) -> &beta; = 0.099V/V<br>
+R<sub>1</sub> /(R<sub>1</sub> + R<sub>2</sub>) = 0.099 -> <b>R<sub>2</sub> = 10(1/0.099 - 1) = 91k&Omega;</b><br>
+(2)<br>
+A = 200V/V<br>
+10 = 200 / (1 + 200&beta;) -> &beta; = 0.095V/V<br>
+R<sub>2</sub> = R<sub>1</sub>(1/0.095 - 1) -> <b>R<sub>2</sub> = 95.3k&Omega;</b><br>
+(3)<br>
+A = 15V/V<br>
+10 = 15/(1 + 15&beta;)<br> -> &beta; = 0.033V/V<br>
+R<sub>2</sub> = R<sub>1</sub>(1/0.033 - 1) -> <b>R<sub>2</sub> = 290k&Omega;</b><br>
+(c)<br>
+(1)<br>
+A = 800V/V<br>
+A<sub>f</sub> = 800 / (1 + 800 * 0.099) = 9.975V/V<br>
+So <b>A<sub>f</sub> = (9.975 - 10) / 10 * 100 = - 0.25%</b><br>
+(2)<br>
+A = 160V/V<br>
+A<sub>f</sub> = 160 / (1 + 160 * 0.095) = 9.877V/V<br>
+So <b>A<sub>f</sub> = (9.877 - 10) / 10 * 100 = - 1.23%</b><br>
+(3)<br>
+A = 12V/V<br>
+A<sub>f</sub> = 12 / (1 + 12 * 0.033) = 8.574V/V<br>
+So <b>A</sub>f</sub> = (8.575 - 10) / 10 * 100 = - 14.3%</b><br>
+ 
+<p> &clubs; Problem 10.16
+&nbsp; (Ans: 3dB는 피드백 회로보다 낮음 (1 + A<sub>M</sub> &beta;) )</p>
+A = A<sub>M</sub> * s / (s + w<sub>L</sub>)<br>
+A<sub>f</sub> = A / (1 + A&beta;) = A<sub>M</sub> * s/(s + w<sub>L</sub>) / {1 + A<sub>M</sub> &beta;s / (s + w<sub>L</sub>)} = {A<sub>M</sub> / (1 + A<sub>M</sub> &beta;)} * [s / {s + w<sub>L</sub> / (1 + A<sub>M</sub> &beta;)}]<br>
+So <b>A<sub>Mf</sub> = A<sub>M</sub> / (1 + A<sub>M</sub> &beta;)<br>
+w<sub>Lf</sub> = w<sub>L</sub> / (1 + A<sub>M</sub> &beta;)</b><br>  
+
+<p> &clubs; Problem 10.22
+&nbsp;</p>
+v<sub>1</sub> = 0.7V, v<sub>O</sub> = 0V<br>
+v<sub>e</sub> = v<sub>1</sub> / &micro; = 7mV<br>
+v<sub>1</sub> = - 0.7V, v<sub>O</sub> = 0V<br>
+v<sub>e</sub> = v<sub>1</sub> / &micro; = -7mV<br>
+<b>A<sub>f</sub> = v<sub>O</sub> / v<sub>S</sub> = A / (1 + A&beta;) = 100 / (1 + 100) = 0.99V/V</b><br>
+
+<p> &clubs; Problem 10.28
+&nbsp;/p>
+(a)<br>
+피드백은 전압분배로 구성되며 이때 저항은 R<sub>f</sub>, R<sub>S1</sub> 를 이용하며<br>
+&beta; = R<sub>S1</sub> / (R<sub>S1</sub> + R<sub>F</sub>)<br>
+폐회로의 이상적인 값 A<sub>f</sub> is 1 / &beta; = 1 + R<sub>F</sub>/R<sub>S1</sub> -> <b>R<sub>F</sub> = 0.9k&Omega;</b><br>
+(b)<br>
+V<sub>s</sub> = 0 일 때<br>
+A&beta; = - V<sub>r</sub> / V<sub>t</sub><br>
+V<sub>d2</sub> = - g<sub>m2</sub>R<sub>D2</sub>V<sub>t</sub><br>
+I<sub>d3</sub> = V<sub>d2</sub> / [ 1/g<sub>m3</sub> + [R<sub>S2</sub> || { R<sub>F</sub> + (R<sub>S1</sub> || 1/g<sub>m1</sub>)}]]<br>
+I<sub>f</sub> = I<sub>d3</sub> * R<sub>S2</sub> / [{R<sub>F</sub> + (R<sub>S1</sub> || 1/g<sub>m1</sub>)} + R<sub>S2</sub>]
+I<sub>d1</sub> = I<sub>f</sub> * R<sub>S1</sub> / (R<sub>S1</sub> + 1/g<sub>m1</sub>)<br>
+V<sub>r</sub> = I<sub>d1</sub>R<sub>D1</sub><br>
+V<sub>d2</sub> = -40V<sub>t</sub><br>
+I<sub>d2</sub> = V<sub>d2</sub> / [ 0.25 + [0.1 || { 0.9 + (0.1 || 0.25)}]] = 2.935V<sub>d2</sub><br>
+I<sub>f</sub> = I<sub>d3</sub> * 0.1 / [{0.9 + (0.1 || 0.25)} + 0.1] = 0.093I<sub>d3</sub><br>
+I<sub>d1</sub> = I<sub>f</sub> * 0.1 / (0.1 + 0.25) = 0.286I<sub>f</sub><br>
+V<sub>r</sub> = 10I<sub>d1</sub> = -31.33V<sub>t</sub> -> A&beta; = 31.33<br>
+A = A&beta; / &beta; = 313.3V/V<br>
+A<sub>f</sub> = A / (1  + A&beta;) = 9.7V/V<br>
+A<sub>f</sub> 는 이상적인 값보다 적으므로<br>
+10 = 313.3 / (1 + 313.3&beta;) -> &beta; = 0.0968<br>
+&beta; = R<sub>S1</sub> / (R<sub>S1</sub> + R<sub>F</sub>) -> R<sub>F</sub> = 933&Omega; (increase of 33&Omega;)
+
+</body></html>

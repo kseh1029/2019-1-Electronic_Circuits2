@@ -1,0 +1,51 @@
+<html lang="en-US"> <body>
+<p> 숙제: 13 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 10.77
+&nbsp; (Ans: &beta; &ge; 2.42 * 10<sup>-3</sup> )</p>
+A(s) = 10<sup>4</sup> / (1 - s/10<sup>4</sup>)(1 + s/10<sup>5</sup>)<sup>2</sup><br>
+A(jw) = 10<sup>4</sup> / (1 + jw/10<sup>4</sup>)(1 + jw/10<sup>5</sup>)<sup>2</sup><br>
+&Phi; = - tan<sup>-1</sup>(w/10<sup>4</sup>) - 2tan<sup>-1</sup>(w/10<sup>5</sup>)<br>
+-180 = - tan<sup>-1</sup>(w<sub>180</sub>/10<sup>4</sup>) - 2tan<sup>-1</sup>(w<sub>180</sub>/10<sup>5</sup>)<br>
+<b>w<sub>180</sub> = 1.095 * 10<sup>5</sup>rad/s<br></b>
+해당 주파수에서, |A| = 10<sup>4</sup> / (1 + 10.95<sup>2</sup>) = 413.6<br>
+|A|&beta;<sub>cr</sub> < 1 -> &beta;<sub>cr</sub> < 2.42 * 10<sup>-3</sup><br>
+<b>&there4; &beta; &ge; 2.42 * 10<sup>-3</sup><br></b>
+
+<p> &clubs; Problem 10.82
+&nbsp; </p>
+(a)<br>
+Q = 0.5 = [(1 + A<sub>0</sub>&beta;)w<sub>P1</sub>w<sub>P2</sub>]<sup>0.5</sup> / (w<sub>P1</sub> + w<sub>P2</sub>) -> 1 + A<sub>0</sub>&beta; = 0.25 * (w<sub>P1</sub> + w<sub>P2</sub>)<sup>2</sup> / w<sub>P1</sub>w<sub>P2</sub> = 3.025<br>
+&beta; = 2.025 * 10<sup>-4</sup><br>
+w<sub>c</sub> = 0.5 * (w<sub>P1</sub> + w<sub>P2</sub>) = 0.5 * 2&pi;(f<sub>P1</sub> + f<sub>P2</sub>)<br>
+<b>&there4; f<sub>c</sub> = 5.5 * 10<sup>4</sup>Hz</b><br>
+(b)<br>
+A<sub>f</sub>(0) = A<sub>0</sub> / (1 + A<sub>0</sub>&beta;) = 3306V/V<br>
+A<sub>f</sub>(s) = A(s) / (1 + A(s)&beta;)<br>
+A(s) = A<sub>0</sub> / (1 + s/w<sub>P1</sub>)(1 + s/w<sub>P2</sub>)<br>
+A<sub>f</sub>(s) = A<sub>0</sub> / [1 + s/w<sub>P1</sub>)(1 + s/w<sub>P2</sub>) + A<sub>0</sub>&beta;]<br>
+A<sub>f</sub>(jw) = A<sub>0</sub> / [(1 + A<sub>0</sub>&beta;) + j(w/w<sub>P1</sub> + w/w<sub>P2</sub>) - (w/w<sub>P1</sub>)(w/w<sub>P2</sub>)]<br>
+A<sub>f</sub>(jw<sub>c</sub>) = 10<sup>4</sup> / j6.05<br>
+<b>&there4; |A<sub>f</sub>|(jw<sub>c</sub>) = 1653V/V</b><br>
+(c)<br>
+Q = 0.5<br>
+(d)<br>
+If &beta; = 2.025 * 10<sup>-3</sup>V/V<br>
+s = -0.5 * 2&pi;(10<sup>4</sup> + 10<sup>5</sup>) = -2&pi; * 5.5 * 10<sup>4</sup><br>
+s/2&pi; = (-5.5 &plusmn;;13.25) * 10<sup>4</sup>Hz<br>
+<b>&there4; Q = [1 + 10<sup>4</sup> * 2.025 * 10<sup>-3</sup>) * 10<sup>4</sup> * 10<sup>5</sup>]<sup>0.5</sup> / (10<sup>4</sup> + 10<sup>5</sup>) = 1.325</b><br>
+
+<p> &clubs; Problem 10.96
+&nbsp;</p>
+A(s)&beta;(s) = - V<sub>r</sub>/ V<sub>t</sub> = A(s)&beta;(s) = 10<sup>5</sup> / (1 + s/10)(1 + sCR)<br>
+CR = 10<sup>-3</sup>s<br>
+(b)<br>
+&theta;(f<sub>1</sub>) = - tan<sup>-1</sup> 3.16 * 10<sup>4</sup> / 10 - tan<sup>-1</sup> 3.16 * 10<sup>4</sup> / 10<sup>3</sup> = -178.2<br>
+<b>&there4;PM : 1.8&deg;</b><br>
+(c)<br>
+A<sub>f</sub>(s) = A(s) / (1 + A(s)&beta;(s)) = 10<sup>5</sup>(1 + s/10<sup>3</sup>) / [1 + 10<sup>5</sup>/(1 + s/10)(1 + s/10<sup>3</sup>)]<br>
+At s = 0 ->A<sub>f</sub> &cong; 1<br>
+s<sub>Z</sub> = - 10<sup>3</sup>rad/s<br>
+10<sup>-9</sup>s<sup>2</sup> + 1.01 * 10<sup>-6</sup>s + 1 = 0 -> s = (- 0.505 &plusmn;j31.62) * 10<sup>3</sup>rad/s<br>
+&cong; 31.62 krad/s, Q = 31.3<br></body></html>

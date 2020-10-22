@@ -1,0 +1,74 @@
+<html lang="en-US"> <body>
+<p> 숙제: 10 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 10.40
+&nbsp;</p>
+(a)<br>
+V<sub>s</sub> 가 증가하면, A<sub>1</sub> 는 감소하고 A<sub>2</sub>를 증가시킨다.<br>
+V<sub>o</sub> 의 증가는 전압분배로 A<sub>1</sub>으로 통과하고<br>
+해당 전압이 입력으로 피드백되어 부귀환으로 합산된다.<br>
+(b)<br>
+A<sub>f</sub>|<sub>ideal</sub> = 1/&beta;, &beta; = R<sub>1</sub> / (R<sub>1</sub> + R<sub>2</sub>)<br>
+폐회로 이득 5V/V를 얻기 위해서, &beta; = 0.2 가 필요하다.<br>
+0.2 = 20 / (20 + R<sub>2</sub>) -> <b>&there4; R<sub>2</sub> = 80k&Omega;</b><br>
+(d)<br>
+V<sub>1</sub> / V<sub>i</sub> = -82 / (82 + 9 + 16) = - 0.766V/V<br>
+V<sub>2</sub> = 12.195V<sub>1</sub><br>
+V<sub>3</sub> = - 200V<sub>2</sub><br>
+V<sub>o</sub> = V<sub>3</sub> * (1 || 100) / {(1 || 100) + 1} = 0.497V<sub>3</sub><br>
+&there4; A = V<sub>o</sub> / V<sub>i</sub> = 0.497 * (-200) * 12.195 * (-0.766) = <b>928.5V/V</b><br>
+(e)<br>
+&beta; = 0.2V/V<br>
+1 + A&beta; = 1 + 928.5 * 0.2 = <b>186.7</b><br>
+(f)<br>
+A<sub>f</sub> = V<sub>o</sub> / V<sub>s</sub> = A / (1 + A&beta;) = <b>4.97V/V</b><br>
+(g)<br>
+R<sub>i</sub> = 107k&Omega;<br>
+R<sub>if</sub> = R<sub>i</sub>(1 + A&beta;) = 19.98M&Omega;<br>
+R<sub>in</sub> = R<sub>if</sub> - R<sub>s</sub> &cong; R<sub>if</sub><br>
+(h)<br>
+R<sub>o</sub> = R<sub>L</sub> || R<sub>22</sub> || 1k&Omega; = 497.5&Omega;<br>
+R<sub>of</sub> = R<sub>o</sub> / (1 + A&beta;) = 2.66&Omega;<br>
+R<sub>out</sub> || R<sub>L</sub> = R<sub>of</sub> -> R<sub>out</sub> &cong; 2.66&Omega;<br>
+(i)<br>
+f<sub>Hf</sub> = f<sub>H</sub>(1 + A&beta;) = <b>18.67KHz</b><br>
+(j)<br>
+A = 0.5 * 928.5 = 464.25<br>
+A<sub>f</sub> = 464.25 / (1 + 464.25 * 0.2) = 4.947V/V<br>
+A<sub>f</sub> 는 - 0.47% 바뀐다.<br>
+
+<p> &clubs; Problem 10.49
+&nbsp;</p>
+(a)<br>
+&beta; = R<sub>F</sub>, A<sub>f</sub>|<sub>ideal</sub> = 1 / &beta; = 1 / R<sub>F</sub><br>
+A<sub>F</sub> &cong; 5mA/V, R<sub>F</sub> = <b>200&Omega;</b><br>
+(b)<br>
+R<sub>11</sub> = R<sub>22</sub> = R<sub>F</sub>, V<sub>1</sub> = V<sub>i</sub><br>
+V<sub>gs</sub> = &micro;V<sub>1</sub> - I<sub>o</sub>R<sub>F</sub><br>
+I<sub>o</sub> = g<sub>m</sub>V<sub>gs</sub> * r<sub>o</sub> / (r<sub>o</sub> + R<sub>F</sub>)<br>
+A = I<sub>o</sub> / V<sub>i</sub> = 1.42A/V<br>
+(c)<br>
+A&beta; = &micro;g<sub>m</sub>r<sub>o</sub>R<sub>F</sub> / (r<sub>o</sub> + R<sub>F</sub> + g<sub>m</sub>r<sub>o</sub>R<sub>F</sub>) -> A&beta; = 283.7<br>
+&there4; 1 + A&beta; = <b>284.7</b><br>
+(d)<br>
+A<sub>f</sub> = I<sub>o</sub> / V<sub>s</sub> = A / (1 + A&beta;) = <b>4.982mA/V</b><br>
+(e)<br>
+R<sub>o</sub> = r<sub>o</sub> + R<sub>F</sub> + g<sub>m</sub>r<sub>o</sub>R<sub>F</sub> + 1 + A&beta;<br>
+R<sub>of</sub> = (1 + A&beta;)R<sub>o</sub> &cong; &micro;g<sub>m</sub>r<sub>o</sub>R<sub>F</sub><br>
+R<sub>o</sub> = 28.2k&Omega;<br>
+R<sub>of</sub> = 20 + 0.2 + 1001 * 2 * 20 * 0.2 = 8028.2k&Omega; &cong; 8M&Omega;<br>
+
+<p> &clubs; Problem 10.50
+&nbsp;</p>
+
+V<sub>s</sub> = 0, R<sub>o</sub> = V<sub>x</sub> / I<sub>x</sub><br>
+V<sub>e</sub> = I<sub>x</sub>[R<sub>e</sub> || (r<sub>&pi;</sub> + R<sub>b</sub>)]<br>
+I<sub>b</sub> = - I<sub>x</sub> * R<sub>e</sub> / (R<sub>e</sub> + r<sub>&pi;</sub> + R<sub>b</sub>)<br>
+V<sub>x</sub> = (I<sub>x</sub> - &beta;I<sub>b</sub>)r<sub>o</sub> + V<sub>e</sub><br>
+R<sub>o</sub> = V<sub>x</sub> / I<sub>x</sub> = r<sub>o</sub> + [R<sub>e</sub> || (r<sub>&pi;</sub> + R<sub>b</sub>)][1 + r<sub>o</sub> * &beta; / (r<sub>&pi;</sub> + R<sub>b</sub>)] =  V<sub>x</sub> / I<sub>x</sub> = r<sub>o</sub> + [R<sub>e</sub> || (r<sub>&pi;</sub> + R<sub>b</sub>)][1 + g<sub>m</sub>r<sub>o</sub> * r<sub>&pi;</sub> / (r<sub>&pi;</sub> + R<sub>b</sub>)]<br>
+R<sub>b</sub> = 0, R<sub>o</sub> = r<sub>o</sub> + (R<sub>e</sub> || r<sub>&pi;</sub>)(1 + g<sub>m</sub>r<sub>o</sub>)<br>
+R<sub>e</sub> >> r<sub>&pi;</sub> 면 R<sub>o</sub> 은 최대값이 된다.<br>
+R<sub>o,max</sub> = r<sub>o</sub> + r<sub>&pi;</sub>(1 + g<sub>m</sub>r<sub>o</sub>) &cong; &beta;r<sub>o</sub><br>
+루프방정식 : V<sub>x</sub> = (&beta; + 1)I<sub>x</sub>r<sub>o</sub> + I<sub>x</sub>r<sub>&pi;</sub><br>
+R<sub>o</sub> = V<sub>x</sub> / I<sub>x</sub> = r<sub>&pi;</sub> + (&beta; + 1)r<sub>o</sub></body></html>

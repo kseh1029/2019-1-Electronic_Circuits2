@@ -1,0 +1,66 @@
+<html lang="en-US"> <body>
+<p> 숙제: 12 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 10.58
+&nbsp;</p>
+
+(a)<br>
+V<sub>G1</sub> = V<sub>GS1</sub> = V<sub>t</sub> + V<sub>OV</sub> = 0.7V(R<sub>F</sub> = 0)<br>
+V<sub>O</sub> = V<sub>G1</sub> = 0.7V<br>
+V<sub>D1</sub> = V<sub>O</sub> + V<sub>GS2</sub> = <b>1.4V</b><br>
+(b)<br>
+g<sub>m1,m2</sub> = 2I / V<sub>OV</sub> = <b>4mA/V</b><br>
+r<sub>o1,o2</sub> = V<sub>A</sub> / I = <b>40k&Omega;</b><br>
+(c)<br>
+R<sub>11</sub> = R<sub>22</sub> = R<sub>F</sub><br>
+V<sub>g1</sub> = I<sub>i</sub>R<sub>i</sub><br>
+R<sub>i</sub> = R<sub>11</sub> = R<sub>F</sub><br>
+V<sub>d1</sub> = - g<sub>m1</sub>r<sub>o1</sub>V<sub>g1</sub><br>
+V<sub>o</sub> / V<sub>d1</sub> = (R<sub>22</sub> || r<sub>o2</sub>) / [(R<sub>22</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>]<br>
+A = V<sub>o</sub> / I<sub>i</sub> = <b>- g<sub>m1</sub>r<sub>o1</sub>R<sub>F</sub> * (R<sub>F</sub> || r<sub>o2</sub>) / [(R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>]</b><br>
+(d)<br>
+&beta; = - 1 / R<sub>F</sub><br>
+A&beta; = g<sub>m1</sub>r<sub>o1</sub> * (R<sub>F</sub> || r<sub>o2</sub>) / [(R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>)] -> <b>1 + A&beta; = 1 + g<sub>m1</sub>r<sub>o1</sub> * (R<sub>F</sub> || r<sub>o2</sub>) / [(R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>)]</b><br>
+(e)<br>
+A<sub>f</sub> = V<sub>o</sub> / I<sub>s</sub> = A / (1 + A&beta;) = <b> - g<sub>m1</sub>r<sub>o1</sub>R<sub>F</sub>(R<sub>F</sub> || r<sub>o2</sub>) / [(R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub> + (g<sub>m1</sub>r<sub>o1</sub>)(R<sub>F</sub> || r<sub>o2</sub>)]</b><br>
+(f)<br>
+R<sub>i</sub> = R<sub>F</sub><br>
+R<sub>in</sub> = R<sub>if</sub> = R<sub>i</sub> / (1 + A&beta;) = R<sub>F</sub> / [1 + g<sub>m1</sub>r<sub>o1</sub> * (R<sub>F</sub> || r<sub>o2</sub>) / {R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>}]<br>
+R<sub>out</sub> = R<sub>of</sub> = R<sub>o</sub> / (1 + A&beta;)<br>
+R<sub>o</sub> = R<sub>F</sub> || r<sub>o2</sub> || 1/g<sub>m2</sub><br>
+R<sub>out</sub> = (R<sub>F</sub> || r<sub>o2</sub> || 1/g<sub>m2</sub>) / [1 + g<sub>m1</sub>r<sub>o1</sub> * (R<sub>F</sub> || r<sub>o2</sub>) / {(R<sub>F</sub> || r<sub>o2</sub>) + 1/g<sub>m2</sub>}<br>
+(g)<br>
+A = - 4 * 40 * 10 * (10 || 40) / [(10 || 40) + 0.25] = - 1551.5k&Omega;<br>
+&beta; = - 1 / R<sub>F</sub> = - 0.1mA/V<br> -> A&beta; = 155.15, 1 + A&beta; = 156.15<br>
+A<sub>f</sub> = - 9.94k&Omega;<br>
+R<sub>i</sub> = R<sub>F</sub> = 10k&Omega;<br>
+R<sub>in</sub> = R<sub>if</sub> = R<sub>F</sub> / (1 + A&beta;) = 64&Omega;<br>
+R<sub>o</sub> = R<sub>F</sub> || r<sub>o2</sub> || 1/g<sub>m2</sub> = 242&Omega;<br>
+R<sub>out</sub> = R<sub>of</sub> = R<sub>o</sub> / (1 + A&beta;) = 1.55&Omega;<br>
+
+<p> &clubs; Problem 10.70
+&nbsp;</p>
+(a)<br>
+&micro; 가 매우 크므로, R<sub>in</sub> = 0 이다.<br>
+I<sub>o</sub> = I<sub>s</sub>, I<sub>o</sub> / I<sub>s</sub> = 1<br>
+(b)<br>
+R<sub>11</sub> = &infin;, R<sub>22</sub> = 0<br>
+V<sub>id</sub> = - I<sub>i</sub>(R<sub>s</sub> || R<sub>id</sub>) &cong; - I<sub>i</sub>R<sub>s</sub><br>
+V<sub>gs</sub> = &micro;V<sub>id</sub><br>
+I<sub>o</sub> = g<sub>m2</sub>V<sub>gs</sub><br>
+A = I<sub>o</sub> / I<sub>i</sub> = - &micro;g<sub>m2</sub>R<sub>s</sub><br>
+R<sub>i</sub> = R<sub>s</sub>, R<sub>o</sub> = r<sub>o2</sub><br>
+(c)<br>
+&beta; = I<sub>f</sub> / I<sub>o</sub> = <b>- 1</b><br>
+(d)<br>
+A&beta; = &micro;g<sub>m2</sub>R<sub>s</sub><br>
+A<sub>f</sub> = A / (1 + A&beta;) = - &micro;g<sub>m2</sub>R<sub>s</sub> / (1 + &micro;g<sub>m2</sub>R<sub>s</sub>)<br>
+&micro; 가 매우 크다면, &micro;g<sub>m2</sub>R<sub>s</sub> >> 1, A<sub>f</sub> &cong; 1<br>
+(e)<br>
+R<sub>if</sub> = R<sub>i</sub> / (1 + A&beta;) = R<sub>s</sub> / &micro;g<sub>m2</sub>R<sub>s</sub><br>
+R<sub>if</sub> = R<sub>in</sub> || R<sub>s</sub> -> 1/R<sub>if</sub> = 1/R<sub>in</sub> + 1/R<sub>s</sub> -> R<sub>in</sub> = 1 / &micro;g<sub>m2</sub><br>
+R<sub>out</sub> = R<sub>of</sub> = R<sub>o</sub>(1 + A&beta;) = r<sub>o2</sub>(1 + &micro;g<sub>m2</sub>R<sub>s</sub>)<br>
+(f)<br>
+I<sub>o</sub> &cong; g<sub>m1</sub>v<sub>i</sub><br>
+R<sub>out</sub> = r<sub>o2</sub>(1 + &micro;g<sub>m2</sub>r<sub>o1</sub>) = r<sub>o2</sub> + &micro;g<sub>m2</sub>r<sub>o1</sub>r<sub>o2</sub> &cong; &micro;g<sub>m2</sub>r<sub>o1</sub>r<sub>o2</sub><br></body></html>

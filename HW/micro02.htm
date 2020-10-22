@@ -1,0 +1,47 @@
+<html lang="en-US"> <body>
+<p> 숙제: 02 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 8.17
+&nbsp; (Ans: (a) A<sub>d</sub>= g<sub>m1,2</sub>*(1/g<sub>m3,4</sub>//r<sub>o3,4</sub>//r<sub>o1,2</sub>)
+<br>(b) root(u<sub>n</sub>(W/L)<sub>1,2</sub> / u<sub>n</sub>(W/L)<sub>3,4</sub>)
+<br>(c) 25</p>
+<center>
+차동회로의 공통 접지가 있으므로 회로를 절반으로 나누어서 공통소스 증폭기처럼 해석을 해보면<br>
+R<sub>D</sub> = 1/g<sub>m3</sub> // r<sub>o3</sub> 이며 접지된 저항끼리 병렬하면<br>
+A<sub>d</sub>= g<sub>m1,2</sub>*(1/g<sub>m3</sub>//r<sub>o3</sub>//r<sub>o1</sub>) 이 된다.<br>
+이제 두 회로가 정합되어있으므로 알맞게 표현을 하면<br>
+<b>&there4; A<sub>d</sub>= g<sub>m1,2</sub>*(1/g<sub>m3,4</sub>//r<sub>o3,4</sub>//r<sub>o1,2)</sub></b><br>
+이 식에서 r<sub>o</sub>를 무시하게 되면 A<sub>d</sub> = g<sub>m1,2</sub>/g<sub>m3,4</sub><br>
+g<sub>m</sub> = root(2u<sub>n</sub>C<sub>ox</sub>(W/L)(I/2)) 이므로 각각 g<sub>m</sub> 에 대입시<br>
+<b>&there4; A<sub>d</sub> = root(u<sub>n</sub>(W/L)<sub>1,2</sub>  /  u<sub>p</sub>(W/L)<sub>3,4</sub>)</b><br>
+여기서 u<sub>n</sub> = 4u<sub>p</sub> 이고 A<sub>d</sub> = 10 이라면<br>
+<b>&there4; (W/L)<sub>1,2</sub> / (W/L)<sub>3,4</sub> = 25</b><br>
+
+
+
+</center>
+
+<p> &clubs; Problem 8.19
+&nbsp; (Ans: (a) V<sub>S1</sub> = V<sub>S2</sub> = -(V<sub>OV1,2</sub> + V<sub>tn</sub>)
+<br>(b)V<sub>OV3</sub> = V<sub>C</sub> + V<sub>OV1,2</sub>
+<br>(c)R<sub>s</sub> = 1/g<sub>m1,2</sub> * (V<sub>OV1,2</sub>/V<sub>OV3</sub>)
+<br>(d1) V<sub>C</sub> = 0
+<br>(d2) V<sub>OV3</sub> = V<sub>OV1,2</sub></p>
+<center>
+V<sub>G1</sub> = V<sub>G2</sub> = 0 이므로 V<sub>GS1</sub> = V<sub>GS2</sub>= V<sub>OV1,2</sub> + V<sub>tn</sub><br>
+즉 <b>V<sub>S1</sub> = V<sub>S2</sub> = -(V<sub>OV1,2</sub> + V<sub>tn)</sub></b> 이다.<br>
+이 상황에서 V<sub>DS</sub> 가 0라면, Q3 에는 전류가 안흐르고 과구동전압은 V<sub>C</sub> = V<sub>S1,2</sub> - V<sub>tn</sub> 이므로<br>
+<b>&there4; V<sub>C</sub> + V<sub>OV1,2</sub></b><br>
+V<sub>G1</sub> 에 V<sub>id</sub>/2 V<sub>G2</sub>에 -V<sub>id</sub>/2 라 한다면 Q3는 Triode Region 에 있으므로 저항처럼 작동한다.<br>
+즉 R<sub>s</sub> = 1 / u<sub>n</sub>C<sub>ox</sub>(W/L)<sub>3</sub>V<sub>OV3</sub> 이고<br>
+g<sub>m1,2</sub> = u<sub>n</sub>C<sub>ox</sub>(W/L)<sub>1,2</sub>V<sub>OV1,2</sub><br>
+g<sub>m3</sub> = u<sub>n</sub>C<sub>ox</sub>(W/L)<sub>3</sub>V<sub>OV3</sub> 이 세 식에 (W/L)<sub>3</sub> = (W/L)<sub>1,2</sub>대입시<br>
+<b>&there4; R<sub>s</sub> = 1/g<sub>m1,2</sub> * (V<sub>OV1,2</sub>/V<sub>OV3</sub>)</b><br>
+R<sub>s</sub> = 1/g<sub>m1,2</sub> 일때 V<sub>OV3</sub> = V<sub>OV1,2</sub> 이므로<br>
+<b>&there4; V<sub>C</sub> = 0</b><br>
+R<sub>s</sub> = 0.5/g<sub>m1,2</sub> 일때 V<sub>OV3</sub> = V<sub>C</sub> + 2V<sub>OV1,2</sub> 이므로<br>
+<b>&there4; V<sub>OV3</sub> = V<sub>OV1,2</sub></b><br>
+
+</center>
+</body> </html>

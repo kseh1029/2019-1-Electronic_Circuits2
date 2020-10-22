@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p> 숙제: 03 분반: 09 <br> <font color="blue">
+학번: 2017117876 이름: 김승현 </font> </p>
+
+<p> &clubs; Problem 8.42
+&nbsp; (Ans: A<sub>d</sub> = αR<sub>c</sub>/r<sub>e</sub>+R<sub>e</sub>
+<br> R<sub>in</sub>=2(β+1)(r<sub>e</sub>+R<sub>e</sub>)
+<br/> (a) V<sub>CM</sub>-V<sub>BE</sub>-(I/2)R<sub>e</sub>
+<br/> (b) V<sub>CM</sub>-V<sub>BE</sub>)
+<br/>
+</p>
+<center>
+(a) 회로의 소신호 해석을 해보면 V<sub>od</sub>=2αi<sub>e</sub>R<sub>c</sub> 이다. <br/>
+이때 i<sub>e</sub> = I/2 이므로 V<sub>id</sub>=2(r<sub>e</sub>+R<sub>e</sub>)i<sub>e</sub> 에 대입시<br/>
+V<sub>id</sub>=2(r<sub>e</sub>+R<sub>e</sub>)(I/2) 를 얻을 수 있다.<br/>
+V<sub>od</sub>=αI<sub>e</sub>R<sub>c</sub> 에 대입하면 V<sub>od</sub>= αV<sub>id</sub>R<sub>c</sub>/r<sub>e</sub>+R<sub>e</sub> 가 나온다<br/>
+즉 <b>A<sub>d</sub> = αR<sub>c</sub>/r<sub>e</sub>+R<sub>e</sub> </b> 이다.<br/>
+V<sub>id</sub>=2(r<sub>e</sub>+R<sub>e</sub>)i<sub>b</sub>(β+1) 에서<br/>
+<b>R<sub>in</sub>=2(β+1)(r<sub>e</sub>+R<sub>e</sub>)</b> 임을 알 수 있다.<br/>
+DC 해석을 해보면 전류원 상단 전압은 <b>V<sub>CM</sub>-V<sub>BE</sub>-(I/2)R<sub>e</sub></b> 이다.<br/>
+(b) 회로의 소신호 해석을 하면 (a) 회로와 마찬가지로 나오게 되며, 입력저항또한 동일하다<br/>
+다만, DC 해석시 전류원 상단 전압이 <b>V<sub>CM</sub>-V<sub>BE</sub></b> 이다.<br/>
+<br>
+</center>
+
+<p> &clubs; Problem 8.51
+&nbsp; (Ans: (a) V<sub>CM</sub> = 2.332[V]
+<br/>(b) R<sub>D</sub> = 5.06[kΩ]
+<br/>(c) V<sub>D</sub> = 2.47[V]
+<br/>(d) ΔV<sub>D1</sub> / ΔV<sub>CM</sub>  = -1.92[V]
+<br/>(e) ΔV<sub>CM</sub> = 0.287[V])
+<br/>
+</p>
+<center>
+I<sub>d</sub> = (1/2)(k<sub>n’</sub>(W/L)(V<sub>OV</sub><sup>2</sup>) 에 주어진 값 대입시<br/>
+0.5 = (1/2)(2.5)(V<sub>OV</sub)<sup>2</sup> 에서 V<sub>OV</sub> = 0.632[V]<br/>
+V<sub>OV</sub> = V<sub>GS</sub> - V<sub>tn</sub> 이므로 0.632 = V<sub>GS</sub> - 0.7, V<sub>GS</sub> = 1.332[V]<br/>
+V<sub>CM</sub> - V<sub>GS</sub> = V<sub>S</sub> 이므로 V<Sub>CM</Sub> - 1.332 = 1, <b>V<sub>CM</sub> = 2.332[V]</b> <br/>
+A<sub>d</sub> = g<sub>m</sub>R<sub>D</sub> = 8[V/V] 이며 g<sub>m</sub> = 2I<sub>D</sub> / V<sub>OV</sub> = I/V<sub>OV</sub> = 1[mA] / 0.632[V] = 1.58[mS]<br/>
+따라서 <b>R<sub>D</sub> = 5.06[kΩ]</b></br>
+<b>V<sub>D</sub> = V<sub>DD</sub> - I<sub>D</sub>R<sub>D</sub> = 5 - 0.5 * 5.06 = 2.47[V]</b></br>
+ΔV<sub>D1</sub> / ΔV<sub>CM</sub> = -(i<sub>d</sub>)R<sub>D</sub> / (1/g<sub>m</sub>) + 2R<sub>SS</sub><br/> = -1.92[V]<br/>
+V<sub>CM</sub> + ΔV<sub>CM</sub> = V<sub>t</sub> + V<sub>D1</sub> + ΔV<sub>D1</sub> 에 값 대입시 <br/>
+2.332 + ΔV<sub>CM</sub>= 0.7 + 2.47 + ΔV<sub>D1</sub>, ΔV<sub>D1</sub> / ΔV<sub>CM</sub>  = -1.92 이므로</br>
+<b>ΔV<sub>CM</sub> = 0.287[V] </b>
+
+
+
+
+</center>
+
+<p> &clubs; Problem 8.74
+&nbsp; (Ans: (a) x=0.3 [kΩ]
+<br/>(b) x=0.225 [kΩ])
+<br/>
+</p>
+<center>
+R<sub>C1</sub> = 1.04 * 5 = 5.2 [kΩ], R<sub>C2</sub> = 0.96 * 5 = 4.8 [kΩ] 이므로<br/>
+R<sub>C1</sub> + x = R<sub>C2</sub> + (1-x) 에 대입시 <b> x=0.225 [kΩ] </b><br/>
+I<sub>S1</sub> = 1.05I<sub>S</sub>, I<sub>S2</sub> = 0.95I<sub>S</sub> 이므로<br/>
+I<sub>E1</sub> = 0.5 * 1.05 = 0.525, I<sub>E2</sub> = 0.5 * 0.95 = 0.475<br/>
+V<sub>od</sub> = 0 이기 위해 V<sub>C1</sub> = V<sub>C2</sub> 이여야 하므로<br/>
+V<sub>CC</sub> - (R<sub>C1</sub>+x)I<sub>C1</sub> = V<sub>CC</sub> - (R<sub>C2</sub> + 1 - x)I<sub>C2</sub><br/>
+대입시 0.525(5+x) = 0.475(1-x), <b>x=0.225 [kΩ]</b></b>
+</center>
+
+
+</body>
+</html>
